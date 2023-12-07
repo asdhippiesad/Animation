@@ -7,6 +7,6 @@ public class ScaleCapsule : MonoBehaviour
     private void Update()
     {
         float growthAmount = _growthSpeed * Time.deltaTime;
-        transform.localScale = new Vector3 (growthAmount, growthAmount, growthAmount);
+        transform.localScale += new Vector3 (growthAmount, growthAmount, growthAmount);
     }
 }
